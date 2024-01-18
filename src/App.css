@@ -1,0 +1,138 @@
+/* 
+.calendar-container {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .day, .empty-day, .calendar-day {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .empty-day {
+    background-color: #f5f5f5;
+  }
+  
+  .calendar-day:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .selected {
+    background-color: #b3e0ff;
+  }
+  
+  .event-input {
+    margin-top: 10px;
+  }
+  
+  .event {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 2px 5px;
+    margin-top: 3px;
+    word-break: break-all;
+  }
+   */
+
+   .calendar-container {
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 1px solid #2980b9;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 20px;
+  }
+  
+  .day, .empty-day, .calendar-day {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    /* border: 1px solid #ecf0f1; */
+    transition: background-color 0.3s ease;
+  }
+  
+  .empty-day {
+    background-color: #f5f5f5;
+  }
+  
+  .calendar-day:hover {
+    background-color: #ecf0f1;
+  }
+  
+  .selected {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .event-input {
+    padding: 10px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .event-input button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event {
+    background-color: #2ecc71;
+    border: 1px solid #27ae60;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  button {
+    border: none;
+    background: #3498db;
+    font-size: x-large;
+    cursor: pointer;
+}
