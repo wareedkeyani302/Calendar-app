@@ -78,3 +78,39 @@ const Calendar = () => {
 };
 
 export default Calendar;
+
+
+
+
+// <div className="days">
+// {daysOfWeek.map(day => (
+//   <div key={day} className="day">{day}</div>
+// ))}
+// {Array.from({ length: blanksBefore }, (_, index) => (
+//   <div key={`blank-${index}`} className="empty-day" />
+// ))}
+// {daysInMonth.map(day => (
+//   <div
+//     key={day}
+//     className={`calendar-day ${selectedDate && selectedDate.getDate() === day ? 'selected' : ''}`}
+//     onClick={() => handleDateClick(day)}
+//   >
+//     <span>{day}</span>
+//     <ul className="event-list">
+//       {events
+//         .filter(event => event.date.toDateString() === (new Date(currentDate.getFullYear(), currentDate.getMonth(), day).toDateString()))
+//         .map((event, index) => (
+//           <li key={index}>{event.title}</li>
+//         ))}
+//     </ul>
+//   </div>
+// ))}
+// </div>
+// <EventModal
+// visible={isEventModalOpen}
+// onCancel={() => setEventModalOpen(false)}
+// selectedDate={selectedDate}
+// addEvent={addEvent}
+// events={events}
+// />
+// </div>
